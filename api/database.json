@@ -1,0 +1,31 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "username": "b00kl0v3r2020",
+            "email": "bookzRule@hotmail.com"
+        }
+    ],
+    "books": [
+        {
+            "id": 1,
+            "title": "Mother's Worst Nightmare", 
+            "author": "Hilda Hilderson",
+            "genreId": 1,
+            "krogerId": 2,
+            "review": " "
+
+        }
+    ],
+    "krogers": [
+        {
+
+        }
+    ],
+    "genres": [
+        {
+
+        }
+    ]
+
+}
