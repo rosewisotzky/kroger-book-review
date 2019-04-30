@@ -5,23 +5,16 @@ import { Nav, NavItem, NavLink } from 'reactstrap';
 export default class NavBar extends Component {
     render() {
         return (
-            <div>
-                <Nav>
-                    {/* <NavItem>
-                        <NavLink disabled href="#">logout</NavLink>
-                    </NavItem> */}
-                    <NavItem>
-                        <NavLink href="/booklist">my list</NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink href="/addbook">add book</NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink href="/review">review</NavLink>
-                    </NavItem>
-
-                </Nav>
-            </div>
+            <React.Fragment>
+                <div className="header-container">
+                    <h1> Kroger Book Review. </h1>
+                </div>
+                <div className="nav-container">
+                    <Nav>
+                        <NavLink href="/booklist">my list</NavLink> <NavLink href="/addbook">add book</NavLink> <NavLink href="/review"> review </NavLink> <NavLink href="#">logout</NavLink>
+                    </Nav>
+                </div>
+            </React.Fragment>
         )
     }
 }
