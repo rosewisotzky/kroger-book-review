@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import KrogerBookReview from './components/KrogerBookReview';
+import { BrowserRouter as Router } from "react-router-dom"
+import KrogerBookReview from './Components/KrogerBookReview';
 
-ReactDOM.render(<KrogerBookReview />, document.getElementById('root'));
+ReactDOM.render(<Router><KrogerBookReview /></Router>, document.getElementById('root'));

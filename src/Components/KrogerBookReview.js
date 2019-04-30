@@ -1,15 +1,15 @@
 import React, { Component } from "react";
-import NavBar from "./NavBar/navbar";
-import ApplicationViews from "./ApplicationViews";
+import NavBar from "./Navbar/navbar";
+import ApplicationViews from "./ApplicationView";
 
 
 export default class KrogerBookReview extends Component {
-  render() {
-    return (
-      <React.Fragment>
-        <NavBar />
-        <ApplicationViews />
-      </React.Fragment>
-    );
-  }
+    render() {
+        return (
+            <React.Fragment>
+                <NavBar />
+                <ApplicationViews />
+            </React.Fragment>
+        );
+    }
 }

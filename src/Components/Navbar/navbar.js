@@ -6,7 +6,6 @@ export default class NavBar extends Component {
     render() {
         return (
             <div>
-                <p>List Based</p>
                 <Nav>
                     {/* <NavItem>
                         <NavLink disabled href="#">logout</NavLink>
@@ -21,11 +20,6 @@ export default class NavBar extends Component {
                         <NavLink href="/review">review</NavLink>
                     </NavItem>
 
-                </Nav>
-                <hr />
-                <p>Link Based</p>
-                <Nav>
-                    <NavLink href="#">Link</NavLink> <NavLink href="#">Link</NavLink> <NavLink href="#">Another Link</NavLink> <NavLink disabled href="#">Disabled Link</NavLink>
                 </Nav>
             </div>
         )
