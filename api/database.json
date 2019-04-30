@@ -14,15 +14,15 @@
             "genreId": 1,
             "krogerId": 2,
             "userId": 1,
-            "review": " "
+            "review": "Great character development, but major plot hole. No one is a mother in this book!"
 
         },
         {
             "id": 2,
             "title": "Spymaster",
             "author": "Brad Thor",
-            "genreId": 1,
-            "krogerId": 2,
+            "genreId": 5,
+            "krogerId": 6,
             "userId": 1,
             "review": " "
         },
@@ -32,7 +32,7 @@
             "author": "Jessica Knoll",
             "genreId": 1,
             "krogerId": 2,
-            "userId": 7,
+            "userId": 1,
             "review": " "
         },
         {
@@ -110,7 +110,7 @@
         },
         {
             "id": 5,
-            "genre": "True Crime"
+            "genre": "Crime"
         }, 
         {
             "id": 6,

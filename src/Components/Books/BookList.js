@@ -7,7 +7,11 @@ export default class BookList extends Component {
             <section className="booklist"> {
                 this.props.books.map(book =>
                     <div key="book">
-                    <p>{book.title} by {book.author}</p>
+                    <h4>{book.title} by {book.author}</h4>
+                    <p>
+                    {book.genre.genre}
+                    {book.kroger.neighborhood}
+                    </p>
                     </div>
                 )
             }
