@@ -35,7 +35,7 @@ export default class AddBook extends Component {
         return (
             <React.Fragment>
                 <h1>add new book</h1>
-                <form onSubmit={this.constructNewBook} className="addform">
+                <form className="addform">
                     <div className="form-div">
                         <label htmlFor="title">Title:</label>
                         <input
@@ -66,6 +66,7 @@ export default class AddBook extends Component {
                         <option value={kroger.id}>{kroger.neighborhood}</option>
                             )}
                         </select>
+                        <button type="submit">add new book</button>
                     </div>
                 </form>
 
