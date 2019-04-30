@@ -5,14 +5,30 @@ export default class BookList extends Component {
     render() {
         return (
             <section className="booklist"> {
-                this.props.books.map(book =>
-                    <div key="book">
-                    <h4>{book.title} by {book.author}</h4>
-                    <p>
-                    {book.genre.genre}
-                    {book.kroger.neighborhood}
-                    </p>
+                this.props.books.map(book => {
+                    if(book.review === " ")
+                    return <div key="book">
+                        <p>
+                            title: {book.title} <br />
+                            author: {book.author} <br />
+                            genre: {book.genre.genre} <br />
+                            kroger: {book.kroger.neighborhood} <br />
+                            address: {book.kroger.address}
+                        </p>
                     </div>
+                    else {
+                        return <div key="book">
+                        <p>
+                            title: {book.title} <br />
+                            author: {book.author} <br />
+                            genre: {book.genre.genre} <br />
+                            kroger: {book.kroger.neighborhood} <br />
+                            address: {book.kroger.address} <br />
+                            review: {book.review}
+                        </p>
+                    </div>
+                    }
+                }
                 )
             }
             </section>
