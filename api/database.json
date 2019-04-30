@@ -1,125 +1,135 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "username": "b00kl0v3r2020",
-            "email": "bookzRule@hotmail.com"
-        }
-    ],
-    "books": [
-        {
-            "id": 1,
-            "title": "Mother's Worst Nightmare", 
-            "author": "Hilda Hilderson",
-            "genreId": 1,
-            "krogerId": 2,
-            "userId": 1,
-            "review": "Great character development, but major plot hole. No one is a mother in this book!"
-
-        },
-        {
-            "id": 2,
-            "title": "Spymaster",
-            "author": "Brad Thor",
-            "genreId": 5,
-            "krogerId": 6,
-            "userId": 1,
-            "review": " "
-        },
-        {
-            "id": 2,
-            "title": "The Favorite Sister",
-            "author": "Jessica Knoll",
-            "genreId": 1,
-            "krogerId": 2,
-            "userId": 1,
-            "review": "Terrible story, the favorite sister was actually a cousin!"
-        },
-        {
-            "id": 3,
-            "title": "Two by Two",
-            "author": "Nicholas Sparks",
-            "genreId": 2,
-            "krogerId": 5,
-            "userId": 1,
-            "review": " "
-        },
-        {
-            "id": 4,
-            "title": "Dark Water Rising",
-            "author": "Sharon Sala",
-            "genreId": 1,
-            "krogerId": 3,
-            "userId": 1,
-            "review": " "
-        }
-    ],
-    "krogers": [
-        {
-            "id": 1,
-            "neighborhood": "Inglewood",
-            "address": "3410 Gallatin Pike, Nashville, TN 37216"
-        },
-        {
-            "id": 2,
-            "neighborhood": "East Nashville",
-            "address": "711 Gallatin Ave, Nashville, TN 37206"
-        },
-        {
-            "id": 3,
-            "neighborhood": "McGavock Pike",
-            "address": "143 Mcgavock Pike, Nashville, TN 37214"
-        },
-        {
-            "id": 4,
-            "neighborhood": "Briley Pkwy",
-            "address": "61 E Thompson Ln, Nashville, TN 37211"
-        },
-        {
-            "id": 5,
-            "neighborhood": "Charlotte Pike",
-            "address": "5705 Charlotte Pike, Nashville, TN 37209"
-        },
-        {
-            "id": 6,
-            "neighborhood": "Green Hills",
-            "address": "2131 Abbott Martin Rd, Nashville, TN 37215"
-        },
-        {
-            "id": 7,
-            "neighborhood": "Hickory Plaza",
-            "address": "5771 Nolensville Pike, Nashville, TN 37211"
-        }
-    ],
-    "genres": [
-        {
-            "id": 1,
-            "genre": "Thriller"
-        },
-        {
-            "id": 2,
-            "genre": "Romance"
-        },
-        {
-            "id": 3,
-            "genre": "Young Adult Fantasy"
-        },
-        {
-            "id": 4,
-            "genre": "Historical Fiction"
-        },
-        {
-            "id": 5,
-            "genre": "Crime"
-        }, 
-        {
-            "id": 6,
-            "genre": "Science Fiction"
-        },
-        {
-            "id": 7,
-            "genre": "Mystery"
-        }
-    ]
-
+  "users": [
+    {
+      "id": 1,
+      "username": "b00kl0v3r2020",
+      "email": "bookzRule@hotmail.com"
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "title": "Mother's Worst Nightmare",
+      "author": "Hilda Hilderson",
+      "genreId": 1,
+      "krogerId": 2,
+      "userId": 1,
+      "review": "Great character development, but major plot hole. No one is a mother in this book!"
+    },
+    {
+      "id": 2,
+      "title": "Spymaster",
+      "author": "Brad Thor",
+      "genreId": 5,
+      "krogerId": 6,
+      "userId": 1,
+      "review": " "
+    },
+    {
+      "id": 2,
+      "title": "The Favorite Sister",
+      "author": "Jessica Knoll",
+      "genreId": 1,
+      "krogerId": 2,
+      "userId": 1,
+      "review": "Terrible story, the favorite sister was actually a cousin!"
+    },
+    {
+      "id": 3,
+      "title": "Two by Two",
+      "author": "Nicholas Sparks",
+      "genreId": 2,
+      "krogerId": 5,
+      "userId": 1,
+      "review": " "
+    },
+    {
+      "id": 4,
+      "title": "Dark Water Rising",
+      "author": "Sharon Sala",
+      "genreId": 1,
+      "krogerId": 3,
+      "userId": 1,
+      "review": " "
+    },
+    {
+      "title": "Justina Is A Great Friend",
+      "author": "Rose",
+      "userId": null,
+      "id": 5
+    },
+    {
+      "title": "Justina Is A Great Friend",
+      "author": "Rose",
+      "userId": null,
+      "id": 6
+    }
+  ],
+  "krogers": [
+    {
+      "id": 1,
+      "neighborhood": "Inglewood",
+      "address": "3410 Gallatin Pike, Nashville, TN 37216"
+    },
+    {
+      "id": 2,
+      "neighborhood": "East Nashville",
+      "address": "711 Gallatin Ave, Nashville, TN 37206"
+    },
+    {
+      "id": 3,
+      "neighborhood": "McGavock Pike",
+      "address": "143 Mcgavock Pike, Nashville, TN 37214"
+    },
+    {
+      "id": 4,
+      "neighborhood": "Briley Pkwy",
+      "address": "61 E Thompson Ln, Nashville, TN 37211"
+    },
+    {
+      "id": 5,
+      "neighborhood": "Charlotte Pike",
+      "address": "5705 Charlotte Pike, Nashville, TN 37209"
+    },
+    {
+      "id": 6,
+      "neighborhood": "Green Hills",
+      "address": "2131 Abbott Martin Rd, Nashville, TN 37215"
+    },
+    {
+      "id": 7,
+      "neighborhood": "Hickory Plaza",
+      "address": "5771 Nolensville Pike, Nashville, TN 37211"
+    }
+  ],
+  "genres": [
+    {
+      "id": 1,
+      "genre": "Thriller"
+    },
+    {
+      "id": 2,
+      "genre": "Romance"
+    },
+    {
+      "id": 3,
+      "genre": "Young Adult Fantasy"
+    },
+    {
+      "id": 4,
+      "genre": "Historical Fiction"
+    },
+    {
+      "id": 5,
+      "genre": "Crime"
+    },
+    {
+      "id": 6,
+      "genre": "Science Fiction"
+    },
+    {
+      "id": 7,
+      "genre": "Mystery"
+    }
+  ]
 }

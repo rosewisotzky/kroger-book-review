@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 
 
-export default class AddBook extends Component {
+export default class AddBookForm extends Component {
     state = {
         title: "",
         author: "",
@@ -21,12 +21,11 @@ export default class AddBook extends Component {
         const newBook = {
             title: this.state.title,
             author: this.state.author,
-            genres: parseInt(this.state.genre.id),
-            krogers: parseInt(this.state.kroger.id),
+            genres: this.state.genres.genre,
+            krogers: this.state.krogers.neighborhood,
             userId: parseInt(this.state.userId)
         }
-        this.props
-            .AddBook(newBook)
+        this.props.addBook(newBook)
             .then(() => this.props.history.push("/booklist"))
 
     }
@@ -35,7 +34,7 @@ export default class AddBook extends Component {
         return (
             <React.Fragment>
                 <h1>add new book</h1>
-                <form className="addform">
+                <form onSubmit={this.constructNewBook} className="addform">
                     <div className="form-div">
                         <label htmlFor="title">Title:</label>
                         <input
