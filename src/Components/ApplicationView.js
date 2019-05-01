@@ -5,6 +5,7 @@ import BookManager from './Books/BookManager';
 import AddBookForm from './Books/AddBookForm'
 import GenreManager from './Genres/GenreManager'
 import KrogerManager from './Krogers/KrogerManager'
+import EditBookForm from './Books/EditBookForm'
 
 
 export default class ApplicationView extends Component {
@@ -40,6 +41,11 @@ deleteBook = id => {
   .then(() => BookManager.getAll())
   .then(books => this.setState({"books": books}))
 }
+updateBook = editedBook => {
+  return BookManager.put(editedBook)
+  .then(() => BookManager.getAll())
+  .then(books => this.setState({"books": books}) )
+}
   render() {
     return (
       <React.Fragment>
@@ -50,6 +56,9 @@ deleteBook = id => {
         <Route exact path="/booklist" render={props => {
           return <BookList {...props} books={this.state.books} deleteBook={this.deleteBook}/>
         }} />
+          <Route path="/booklist/:bookId(\d+)/edit" render={props => {
+            return <EditBookForm {...props} books={this.state.books} genres={this.state.genres} krogers={this.state.krogers} updateBook={this.updateBook} />
+          }} />
         <Route path="/addbook" render={props => {
           return <AddBookForm {...props} books={this.state.books} genres={this.state.genres} krogers={this.state.krogers} addBook={this.addBook} />
         }} />

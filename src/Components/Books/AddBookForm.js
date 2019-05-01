@@ -58,7 +58,7 @@ export default class AddBookForm extends Component {
                             onChange={this.handleFieldChange}
                             id="author"
                             placeholder="author"></input> <br />
-                        <label htmlFor="review">Review:</label>
+                        <label htmlFor="review">Review(optional):</label>
                         <textarea
                             type="textarea"
                             className="reviewInput"
