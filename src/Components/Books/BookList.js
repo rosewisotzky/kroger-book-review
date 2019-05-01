@@ -20,6 +20,7 @@ export default class BookList extends Component {
                                 kroger: {book.kroger.neighborhood} <br />
                                 address: {book.kroger.address}
                             </p>
+                            <button type="button" className="edit-book" onClick={() => console.log("WOW SO CLOSE TO EDIT!")}>edit book</button>
                             <button type="button" className="delete-book" onClick={() => this.props.deleteBook(book.id)}>delete</button>
                         </div>
                     // Buuuuuut if it DOES have something other than an empty string, this tells it to add that review line on.
@@ -33,6 +34,7 @@ export default class BookList extends Component {
                                 address: {book.kroger.address} <br />
                                 review: {book.review}
                             </p>
+                            <button type="button" className="edit-book" onClick={() => console.log("PROUD OF U!")}>edit book</button>
                             <button type="button" className="delete-book" onClick={() => this.props.deleteBook(book.id)}>delete</button>
                         </div>
                     }
