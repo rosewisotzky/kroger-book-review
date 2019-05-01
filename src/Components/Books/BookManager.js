@@ -1,3 +1,5 @@
+// In this module we are making our fetch calls to gather our data about our books. The first getAll is an expand so we can get the data regarding genre and krogers as well, which live in different resources.
+
 const remoteURL = "http://localhost:5002"
 
 export default {
