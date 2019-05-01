@@ -53,22 +53,22 @@
       "id": 7
     },
     {
-      "title": "Damn, three hours later and her coffee is still there.",
+      "title": "Jameka Is Truly Amazing",
       "author": "Rose",
       "genreId": 2,
-      "krogerId": 3,
+      "krogerId": 6,
       "userId": 1,
       "review": "",
-      "id": 8
+      "id": 10
     },
     {
-      "title": "CRIME LORDZ",
-      "author": "Michael Crighton ",
-      "genreId": 2,
+      "title": "Meag and Rose's Big Adventure",
+      "author": "Meag Mueller",
+      "genreId": 6,
       "krogerId": 2,
       "userId": 1,
-      "review": "Feudal Lords Fight Crime",
-      "id": 9
+      "review": "WAS SITTING ON THE EDGE OF MY SEAT TRULY A WILD RIDE",
+      "id": 11
     }
   ],
   "krogers": [
