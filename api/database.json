@@ -10,7 +10,7 @@
     {
       "id": 1,
       "title": "Mother's Worst Nightmare",
-      "author": "Hilda Hilderson the Fifth",
+      "author": "Hilda Hilderson the SIXTHHH",
       "genreId": 1,
       "krogerId": 2,
       "userId": 1,
@@ -33,15 +33,6 @@
       "krogerId": 3,
       "userId": 1,
       "review": ""
-    },
-    {
-      "title": "Rose Drinks One Cup of Coffee for 4 hours",
-      "author": "Rose",
-      "genreId": 7,
-      "krogerId": 7,
-      "userId": 1,
-      "review": "",
-      "id": 7
     },
     {
       "title": "Jameka Is Truly Amazing",
