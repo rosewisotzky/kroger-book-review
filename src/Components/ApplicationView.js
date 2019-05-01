@@ -34,9 +34,12 @@ export default class ApplicationView extends Component {
     return BookManager.post(newBook)
     .then(() => BookManager.getAll())
       .then(books => this.setState({ "books": books }))
-
   }
-
+deleteBook = id => {
+  return BookManager.delete(id)
+  .then(() => BookManager.getAll())
+  .then(books => this.setState({"books": books}))
+}
   render() {
     return (
       <React.Fragment>
@@ -45,7 +48,7 @@ export default class ApplicationView extends Component {
         }
         } />
         <Route exact path="/booklist" render={props => {
-          return <BookList books={this.state.books} {...props}/>
+          return <BookList {...props} books={this.state.books} deleteBook={this.deleteBook}/>
         }} />
         <Route path="/addbook" render={props => {
           return <AddBookForm {...props} books={this.state.books} genres={this.state.genres} krogers={this.state.krogers} addBook={this.addBook} />

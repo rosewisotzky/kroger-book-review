@@ -17,5 +17,11 @@ export default {
             },
             body: JSON.stringify(newBook)
         }).then(book => book.json())
+    },
+    delete(id) {
+        return fetch(`${remoteURL}/books/${id}`, {
+            method: "DELETE"
+        })
+            .then(book => book.json())
     }
 }
