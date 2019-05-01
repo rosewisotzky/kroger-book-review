@@ -34,7 +34,7 @@ export default class AddBookForm extends Component {
 
     }
     render() {
-        console.log(this.props.books)
+        // console.log(this.props.books)
         return (
             <React.Fragment>
                 <h1>add new book</h1>
