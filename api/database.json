@@ -23,16 +23,7 @@
       "genreId": 5,
       "krogerId": 6,
       "userId": 1,
-      "review": " "
-    },
-    {
-      "id": 2,
-      "title": "The Favorite Sister",
-      "author": "Jessica Knoll",
-      "genreId": 1,
-      "krogerId": 2,
-      "userId": 1,
-      "review": "Terrible story, the favorite sister was actually a cousin!"
+      "review": ""
     },
     {
       "id": 3,
@@ -41,7 +32,7 @@
       "genreId": 2,
       "krogerId": 5,
       "userId": 1,
-      "review": " "
+      "review": ""
     },
     {
       "id": 4,
@@ -50,19 +41,34 @@
       "genreId": 1,
       "krogerId": 3,
       "userId": 1,
-      "review": " "
+      "review": ""
     },
     {
-      "title": "Justina Is A Great Friend",
+      "title": "Rose Drinks One Cup of Coffee for 4 hours",
       "author": "Rose",
-      "userId": null,
-      "id": 5
+      "genreId": 7,
+      "krogerId": 7,
+      "userId": 1,
+      "review": "",
+      "id": 7
     },
     {
-      "title": "Justina Is A Great Friend",
+      "title": "Damn, three hours later and her coffee is still there.",
       "author": "Rose",
-      "userId": null,
-      "id": 6
+      "genreId": 2,
+      "krogerId": 3,
+      "userId": 1,
+      "review": "",
+      "id": 8
+    },
+    {
+      "title": "CRIME LORDZ",
+      "author": "Michael Crighton ",
+      "genreId": 2,
+      "krogerId": 2,
+      "userId": 1,
+      "review": "Feudal Lords Fight Crime",
+      "id": 9
     }
   ],
   "krogers": [
