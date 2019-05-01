@@ -10,20 +10,11 @@
     {
       "id": 1,
       "title": "Mother's Worst Nightmare",
-      "author": "Hilda Hilderson",
+      "author": "Hilda Hilderson the Fourth",
       "genreId": 1,
       "krogerId": 2,
       "userId": 1,
       "review": "Great character development, but major plot hole. No one is a mother in this book!"
-    },
-    {
-      "id": 2,
-      "title": "Spymaster",
-      "author": "Brad Thor",
-      "genreId": 5,
-      "krogerId": 6,
-      "userId": 1,
-      "review": ""
     },
     {
       "id": 3,

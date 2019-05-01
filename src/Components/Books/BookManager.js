@@ -8,6 +8,7 @@ export default {
     },
     get(id) {
         return fetch(`${remoteURL}/books/${id}`)
+        .then(book => book.json())
     },
     post(newBook) {
         return fetch(`${remoteURL}/books`, {
@@ -23,5 +24,14 @@ export default {
             method: "DELETE"
         })
             .then(book => book.json())
+    },
+    put(editedBook) {
+        return fetch(`${remoteURL}/books/${editedBook.id}`, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(editedBook)
+        }).then(data => data.json());
     }
 }
