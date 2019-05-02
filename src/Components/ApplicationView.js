@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Redirect } from 'react-router-dom';
 import BookList from './Books/BookList'
 import BookManager from './Books/BookManager';
 import AddBookForm from './Books/AddBookForm'
@@ -9,8 +9,11 @@ import EditBookForm from './Books/EditBookForm'
 import ReviewList from './Books/ReviewList';
 import ReviewForm from './Books/ReviewForm'
 import Login from './Login/login'
+import LoginManager from './Login/LoginManager'
 
 export default class ApplicationView extends Component {
+
+  isAuthenticated = () => sessionStorage.getItem("userID") !== null
 
   state = {
     "users": [],
@@ -31,6 +34,9 @@ export default class ApplicationView extends Component {
     KrogerManager.getAll()
       .then(kroger => newState.krogers = kroger)
       .then(() => this.setState(newState))
+    LoginManager.getAll()
+    .then(user => newState.user = user)
+    .then(() => this.setState(newState))
   }
   // Here's our method addBook which takes that new book and using our POST call written our BookManager module sets the new state to have that book in it.
   addBook = newBook => {
@@ -53,24 +59,34 @@ patchBook = reviewedBook => {
   .then(() => BookManager.getAll())
   .then(books => this.setState({"books": books}))
 }
+onLogin = () => {
+  this.setState({
+    userId: sessionStorage.getItem("userID")
+  })
+  
+  
+}
   render() {
     return (
       <React.Fragment>
-        <Route path="/" render={props => {
-          return <Login {...props} handleLogin={this.handleLogin} />
+        <Route exact path="/" render={props => {
+          return <Login {...props} handleLogin={this.handleLogin} onLogin={this.onLogin} />
         }
         } />
         <Route exact path="/booklist" render={props => {
-          return <BookList {...props} books={this.state.books} deleteBook={this.deleteBook}/>
+          if (this.isAuthenticated()) {
+          return <BookList {...props} books={this.state.books} deleteBook={this.deleteBook}/> } else { return <Redirect to="/" /> }
         }} />
           <Route path="/booklist/:bookId(\d+)/edit" render={props => {
             return <EditBookForm {...props} books={this.state.books} genres={this.state.genres} krogers={this.state.krogers} updateBook={this.updateBook} />
           }} />
         <Route path="/addbook" render={props => {
-          return <AddBookForm {...props} books={this.state.books} genres={this.state.genres} krogers={this.state.krogers} addBook={this.addBook} />
+          if (this.isAuthenticated()) {
+          return <AddBookForm {...props} books={this.state.books} genres={this.state.genres} krogers={this.state.krogers} addBook={this.addBook} /> } else { return <Redirect to="/" /> }
         }} />
         <Route exact path="/review" render={props => {
-          return <ReviewList {...props} books={this.state.books} />
+          if (this.isAuthenticated()) {
+          return <ReviewList {...props} books={this.state.books} /> } else { return <Redirect to="/" />}
         }} />
         <Route path="/review/:bookId(\d+)/addreview" render={props => {
           return <ReviewForm {...props} books={this.state.books} genres={this.state.genres} krogers={this.state.krogers} patchBook={this.patchBook} />

@@ -4,6 +4,11 @@
       "id": 1,
       "username": "b00kl0v3r2020",
       "email": "bookzRule@hotmail.com"
+    },
+    {
+      "id": 2,
+      "username": "JOE",
+      "email": "J@J.COM"
     }
   ],
   "books": [
@@ -23,7 +28,7 @@
       "genreId": 2,
       "krogerId": 5,
       "userId": 1,
-      "review": "Alright"
+      "review": ""
     },
     {
       "id": 4,
@@ -49,7 +54,7 @@
       "genreId": 6,
       "krogerId": 2,
       "userId": 1,
-      "review": "WAS SITTING ON THE EDGE OF MY SEAT TRULY A WILD RIDE",
+      "review": "",
       "id": 11
     }
   ],
