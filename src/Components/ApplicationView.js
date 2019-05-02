@@ -10,6 +10,7 @@ import ReviewList from './Books/ReviewList';
 import ReviewForm from './Books/ReviewForm'
 import Login from './Login/login'
 import LoginManager from './Login/LoginManager'
+import RegistrationForm from './Registration/registration'
 
 export default class ApplicationView extends Component {
 
@@ -63,9 +64,14 @@ onLogin = () => {
   this.setState({
     userId: sessionStorage.getItem("userID")
   })
-  
-  
 }
+registerNewUser  = () => {
+  this.setState({
+    userId: sessionStorage.getItem("userID")
+  })
+}
+  
+
   render() {
     return (
       <React.Fragment>
@@ -73,6 +79,9 @@ onLogin = () => {
           return <Login {...props} handleLogin={this.handleLogin} onLogin={this.onLogin} />
         }
         } />
+        <Route exact path="/registration" render={props => {
+          return <RegistrationForm {...props} handleRegistration={this.handleRegistration} registerNewUser={this.registerNewUser}/>
+        }} />
         <Route exact path="/booklist" render={props => {
           if (this.isAuthenticated()) {
           return <BookList {...props} books={this.state.books} deleteBook={this.deleteBook}/> } else { return <Redirect to="/" /> }

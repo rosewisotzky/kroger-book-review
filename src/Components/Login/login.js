@@ -48,6 +48,7 @@ export default class Login extends Component {
                         required=""
                     ></input>
                     <button type="submit">sign in</button>
+                    <button type="button" onClick={this.props.history.push("./registration")}>register new account</button>
                 </form>
             </React.Fragment>
 
