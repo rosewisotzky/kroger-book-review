@@ -8,7 +8,7 @@ import KrogerManager from './Krogers/KrogerManager'
 import EditBookForm from './Books/EditBookForm'
 import ReviewList from './Books/ReviewList';
 import ReviewForm from './Books/ReviewForm'
-
+import Login from './Login/login'
 
 export default class ApplicationView extends Component {
 
@@ -57,7 +57,7 @@ patchBook = reviewedBook => {
     return (
       <React.Fragment>
         <Route path="/" render={props => {
-          return null
+          return <Login {...props} handleLogin={this.handleLogin} />
         }
         } />
         <Route exact path="/booklist" render={props => {
