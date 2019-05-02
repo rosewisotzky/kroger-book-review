@@ -7,6 +7,7 @@ import GenreManager from './Genres/GenreManager'
 import KrogerManager from './Krogers/KrogerManager'
 import EditBookForm from './Books/EditBookForm'
 import ReviewList from './Books/ReviewList';
+import ReviewForm from './Books/ReviewForm'
 
 
 export default class ApplicationView extends Component {
@@ -63,8 +64,11 @@ updateBook = editedBook => {
         <Route path="/addbook" render={props => {
           return <AddBookForm {...props} books={this.state.books} genres={this.state.genres} krogers={this.state.krogers} addBook={this.addBook} />
         }} />
-        <Route path="/review" render={props => {
+        <Route exact path="/review" render={props => {
           return <ReviewList {...props} books={this.state.books} />
+        }} />
+        <Route path="/review/:bookId(\d+)/addreview" render={props => {
+          return <ReviewForm {...props} books={this.state.books} genres={this.state.genres} krogers={this.state.krogers} updateBook={this.updateBook} />
         }} />
       </React.Fragment>
     )
