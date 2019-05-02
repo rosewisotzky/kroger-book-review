@@ -32,7 +32,7 @@ export default class ReviewBookForm extends Component {
             userId: parseInt(this.state.userId),
             review: this.state.review
         }
-        this.props.updateBook(reviewedBook)
+        this.props.patchBook(reviewedBook)
             .then(() => this.props.history.push("/booklist"))
     }
     componentDidMount() {
@@ -65,7 +65,7 @@ export default class ReviewBookForm extends Component {
         return (
             <React.Fragment>
                 <h1>review book</h1>
-                {/* This tells us that when we click the button with the type of submit that our method updateExisingBook will be called. */}
+                {/* This tells us that when we click the button with the type of submit that our method patchExisingBook will be called. */}
                 <form onSubmit={this.reviewExisitingBook} className="addform">
                     <div className="form-div" key="add-form">
                         title: {this.state.title} <br />

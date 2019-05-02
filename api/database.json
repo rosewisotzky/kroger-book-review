@@ -23,7 +23,7 @@
       "genreId": 2,
       "krogerId": 5,
       "userId": 1,
-      "review": ""
+      "review": "Alright"
     },
     {
       "id": 4,
@@ -35,13 +35,13 @@
       "review": ""
     },
     {
+      "id": 10,
       "title": "Jameka Is Truly Amazing",
       "author": "Rose",
       "genreId": 2,
       "krogerId": 6,
       "userId": 1,
-      "review": "",
-      "id": 10
+      "review": "From the first sentence of this book, I was struck with the importance of this novel. From cover to cover, I wholeheartedly agree that Jameka is truly amazing."
     },
     {
       "title": "Meag and Rose's Big Adventure",

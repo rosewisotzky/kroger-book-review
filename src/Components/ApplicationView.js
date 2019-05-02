@@ -48,6 +48,11 @@ updateBook = editedBook => {
   .then(() => BookManager.getAll())
   .then(books => this.setState({"books": books}) )
 }
+patchBook = reviewedBook => {
+  return BookManager.patch(reviewedBook)
+  .then(() => BookManager.getAll())
+  .then(books => this.setState({"books": books}))
+}
   render() {
     return (
       <React.Fragment>
@@ -68,7 +73,7 @@ updateBook = editedBook => {
           return <ReviewList {...props} books={this.state.books} />
         }} />
         <Route path="/review/:bookId(\d+)/addreview" render={props => {
-          return <ReviewForm {...props} books={this.state.books} genres={this.state.genres} krogers={this.state.krogers} updateBook={this.updateBook} />
+          return <ReviewForm {...props} books={this.state.books} genres={this.state.genres} krogers={this.state.krogers} patchBook={this.patchBook} />
         }} />
       </React.Fragment>
     )
