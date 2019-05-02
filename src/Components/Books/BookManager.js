@@ -33,5 +33,14 @@ export default {
             },
             body: JSON.stringify(editedBook)
         }).then(data => data.json());
+    },
+    patch(reviewedBook) {
+        return fetch(`${remoteURL}/books/${reviewedBook.id}`, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(reviewedBook)
+        }).then(data => data.json());
     }
 }
