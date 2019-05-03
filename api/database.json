@@ -9,6 +9,16 @@
       "id": 2,
       "username": "JOE",
       "email": "J@J.COM"
+    },
+    {
+      "username": "MichaelCrichton",
+      "email": "crime@hotmail.com",
+      "id": 3
+    },
+    {
+      "username": "Billy",
+      "email": "crimeZZZ@hotmail.com",
+      "id": 4
     }
   ],
   "books": [
@@ -56,6 +66,33 @@
       "userId": 1,
       "review": "",
       "id": 11
+    },
+    {
+      "title": "Rose Drinks One Cup of Coffee for 4 hours",
+      "author": "Hilda Hilderson",
+      "genreId": 5,
+      "krogerId": 2,
+      "userId": 1,
+      "review": "",
+      "id": 12
+    },
+    {
+      "title": "CRIME LORDZ",
+      "author": "Michael Crighton ",
+      "genreId": 3,
+      "krogerId": 1,
+      "userId": 4,
+      "review": "",
+      "id": 14
+    },
+    {
+      "title": "Ghost Spa",
+      "author": "Glent Cucumber",
+      "genreId": 2,
+      "krogerId": 7,
+      "userId": 3,
+      "review": "Spooky!",
+      "id": 15
     }
   ],
   "krogers": [

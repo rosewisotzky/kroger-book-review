@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// import { withRouter } from 'react-router'
 import { Route, Redirect } from 'react-router-dom';
 import BookList from './Books/BookList'
 import BookManager from './Books/BookManager';
@@ -10,6 +11,7 @@ import ReviewList from './Books/ReviewList';
 import ReviewForm from './Books/ReviewForm'
 import Login from './Login/login'
 import LoginManager from './Login/LoginManager'
+import RegistrationForm from './Registration/registration'
 
 export default class ApplicationView extends Component {
 
@@ -63,24 +65,32 @@ onLogin = () => {
   this.setState({
     userId: sessionStorage.getItem("userID")
   })
-  
-  
 }
+registerNewUser  = (newUser) => {
+  return LoginManager.addNewUser(newUser)
+  .then(() => LoginManager.getAll())
+  .then(users => this.setState({"users": users}))
+}
+  
+
   render() {
     return (
       <React.Fragment>
         <Route exact path="/" render={props => {
-          return <Login {...props} handleLogin={this.handleLogin} onLogin={this.onLogin} />
+          return <Login {...props} onLogin={this.onLogin} />
         }
         } />
+        <Route exact path="/registration" render={props => {
+          return <RegistrationForm {...props} registerNewUser={this.registerNewUser} onLogin={this.onLogin}/>
+        }} />
         <Route exact path="/booklist" render={props => {
           if (this.isAuthenticated()) {
-          return <BookList {...props} books={this.state.books} deleteBook={this.deleteBook}/> } else { return <Redirect to="/" /> }
+          return <BookList {...props} onLogin={this.onLogin} books={this.state.books} deleteBook={this.deleteBook}/> } else { return <Redirect to="/" /> }
         }} />
           <Route path="/booklist/:bookId(\d+)/edit" render={props => {
             return <EditBookForm {...props} books={this.state.books} genres={this.state.genres} krogers={this.state.krogers} updateBook={this.updateBook} />
           }} />
-        <Route path="/addbook" render={props => {
+        <Route exact path="/addbook" render={props => {
           if (this.isAuthenticated()) {
           return <AddBookForm {...props} books={this.state.books} genres={this.state.genres} krogers={this.state.krogers} addBook={this.addBook} /> } else { return <Redirect to="/" /> }
         }} />

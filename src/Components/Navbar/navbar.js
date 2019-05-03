@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Nav, NavItem, NavLink } from 'reactstrap';
+import { Nav, NavLink } from 'reactstrap';
 
 
 export default class NavBar extends Component {
