@@ -13,8 +13,7 @@ export default class Registration extends Component {
     }
     handleRegistration = (event) => {
         event.preventDefault()
-        return fetch("http://localhost:5002/users")
-            .then(response => response.json())
+        return LoginManager.getAll() 
             .then(userList => {
                 let isMatch = userList.find(user => user.username.toLowerCase() === this.state.username.toLowerCase())
                 if (isMatch) {
@@ -29,7 +28,7 @@ export default class Registration extends Component {
                     this.props.registerNewUser(newUser)
                     .then(() => LoginManager.getAll())
                     .then(response => response.find(user => user.username === this.state.username))
-                    .then(matchedUserInfo => sessionStorage.setItem("userId", matchedUserInfo.id))
+                    .then(matchedUserInfo => sessionStorage.setItem("userID", matchedUserInfo.id))
                     .then(() => this.props.onLogin())
                     .then(() => this.props.history.push("/booklist"))
                 }
@@ -41,8 +40,8 @@ export default class Registration extends Component {
     render() {
         return (
             <React.Fragment>
-                <h1>sign in</h1>
-                <form onSubmit={this.handleLogin}>
+                <h1>create new account</h1>
+                <form onSubmit={this.handleRegistration}>
                     <label htmlFor="inputUsername">username: </label>
                     <input
                         onChange={this.handleFieldChange}
@@ -59,7 +58,7 @@ export default class Registration extends Component {
                         placeholder="email"
                         required=""
                     ></input>
-                    <button type="button" onClick={this.handleRegistration} >register new account</button>
+                    <button type="submit">register new account</button>
                 </form>
             </React.Fragment>
 

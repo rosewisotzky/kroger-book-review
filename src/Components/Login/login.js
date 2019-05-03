@@ -23,6 +23,7 @@ export default class Login extends Component {
                 } else {
                     window.alert("Hey! These aren't your books! Try with your own username or register to create your own account")
                 }
+
             })
 
     }
@@ -48,7 +49,7 @@ export default class Login extends Component {
                         required=""
                     ></input>
                     <button type="submit">sign in</button>
-                    <button type="button" onClick={this.props.history.push("./registration")}>register new account</button>
+                    <button type="register" onClick={() =>{this.props.history.push("./registration")}}>register new account</button>
                 </form>
             </React.Fragment>
 

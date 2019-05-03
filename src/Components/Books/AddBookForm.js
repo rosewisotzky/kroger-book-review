@@ -8,7 +8,7 @@ export default class AddBookForm extends Component {
         genreId: "",
         krogerId: "",
         review: "",
-        userId: 1
+        userId: ""
     }
     // handleFieldChange set state to whatever the input value is.
     handleFieldChange = event => {
@@ -24,7 +24,7 @@ export default class AddBookForm extends Component {
             author: this.state.author,
             genreId: parseInt(this.state.genreId),
             krogerId: parseInt(this.state.krogerId),
-            userId: parseInt(this.state.userId),
+            userId: parseInt(sessionStorage.getItem("userID")),
             review: this.state.review
         }
         // Here we are adding the new book to the URL path that ends with /booklist
