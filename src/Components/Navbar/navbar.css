@@ -1,8 +1,25 @@
 .header-container {
-    font-family: 'Cormorant Garamond', serif;
-    flex: flex;
-    margin: 10px;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    color: #DF0101;
+    justify-content: center
+}
+.title-header {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 64px;
+    font-weight: 600;
+    color: black;
+    justify-content: center;
+    margin: 10px;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 24px;
+    margin: 5px;
+    padding: 10px;
+    font-family: 'Raleway', serif;
+    font-weight: 300;
 }
