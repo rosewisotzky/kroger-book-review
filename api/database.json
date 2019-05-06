@@ -39,6 +39,11 @@
       "username": "LINDA",
       "email": "BESTLINDAEVER@HOTMAIL.COM",
       "id": 8
+    },
+    {
+      "username": "krogerfan2022",
+      "email": "g@g.com",
+      "id": 9
     }
   ],
   "books": [
@@ -122,6 +127,24 @@
       "userId": 1,
       "review": "",
       "id": 18
+    },
+    {
+      "title": "test",
+      "author": "test",
+      "genreId": 2,
+      "krogerId": 1,
+      "userId": 9,
+      "review": "",
+      "id": 19
+    },
+    {
+      "title": "Justina Is A Great Friend",
+      "author": "Rose",
+      "genreId": 3,
+      "krogerId": 5,
+      "userId": 3,
+      "review": "",
+      "id": 20
     }
   ],
   "krogers": [
