@@ -21,6 +21,7 @@ export default class ReviewBookForm extends Component {
         stateToChange[event.target.id] = event.target.value
         this.setState(stateToChange)
     }
+    // reviewExistingBook is our method that updates our book object with the review. 
     reviewExisitingBook = (event) => {
         event.preventDefault()
         const reviewedBook = {
@@ -32,6 +33,7 @@ export default class ReviewBookForm extends Component {
             userId: parseInt(this.state.userId),
             review: this.state.review
         }
+        // Then we call our PATCH while passing in reviewedBook as our argument and then go to the URL path that ends in /booklist.
         this.props.patchBook(reviewedBook)
             .then(() => this.props.history.push("/booklist"))
     }

@@ -16,6 +16,7 @@ export default class EditBookForm extends Component {
         stateToChange[event.target.id] = event.target.value
         this.setState(stateToChange)
     }
+    // updateExisitingBook is our method that POSTS our editedBook to our database, then GETS the new fresh book list, puts it on the DOM and bring our user back to the booklist page.
     updateExisitingBook = (event) => {
         event.preventDefault()
         const editedBook = {

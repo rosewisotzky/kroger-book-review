@@ -10,13 +10,13 @@ export default class AddBookForm extends Component {
         review: "",
         userId: ""
     }
-    // handleFieldChange set state to whatever the input value is.
+    // handleFieldChange sets state to whatever the input value is by targeting the id and snaggin the value.
     handleFieldChange = event => {
         const stateToChange = {}
         stateToChange[event.target.id] = event.target.value
         this.setState(stateToChange)
     }
-    // Here is our method to create a new book object.
+    // Here is our method to create a new book object. We're preventing refreshes with preventDefault and then using session storage to get the item called 'userID' so we know which user is adding the book. Rad!
     constructNewBook = (event) => {
         event.preventDefault()
         const newBook = {
@@ -30,7 +30,6 @@ export default class AddBookForm extends Component {
         // Here we are adding the new book to the URL path that ends with /booklist
         this.props.addBook(newBook)
             .then(() => this.props.history.push("/booklist"))
-        console.log("newBook", newBook)
 
     }
     render() {

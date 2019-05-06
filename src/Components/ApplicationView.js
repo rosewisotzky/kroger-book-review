@@ -46,26 +46,31 @@ export default class ApplicationView extends Component {
     .then(() => BookManager.getAll())
       .then(books => this.setState({ "books": books }))
   }
+  // deleteBook calls our DELETE fetch call and then gives us the updated books and sets that to the state.
 deleteBook = id => {
   return BookManager.delete(id)
   .then(() => BookManager.getAll())
   .then(books => this.setState({"books": books}))
 }
+// updateBook calls our PUT fetch call and gives us the new booklist that reflects our changes and sets it to state.
 updateBook = editedBook => {
   return BookManager.put(editedBook)
   .then(() => BookManager.getAll())
   .then(books => this.setState({"books": books}) )
 }
+// patchBook calls our PATCH. Since we're only updating a single key value we are using a PATCH instead of a PUT. Rad!
 patchBook = reviewedBook => {
   return BookManager.patch(reviewedBook)
   .then(() => BookManager.getAll())
   .then(books => this.setState({"books": books}))
 }
+// onLogin is our method that grabs the id of the user and changes state by setting the userID in session storage to the state. Now if that user adds a book, our app knows which userId to assign that book to. This user may only delete and edit books that are assigned to that ID but they may view all of them. Rad!
 onLogin = () => {
   this.setState({
     userId: sessionStorage.getItem("userID")
   })
 }
+// registerNewUser is our method that returns our POST call, addNewUser. Then we get our brand spankin' new list of users with our GET and set our state to reflect the POST that we made. 
 registerNewUser  = (newUser) => {
   return LoginManager.addNewUser(newUser)
   .then(() => LoginManager.getAll())
