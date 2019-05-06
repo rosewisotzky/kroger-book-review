@@ -104,6 +104,24 @@
       "krogerId": 1,
       "userId": 8,
       "review": "TOO SOFT"
+    },
+    {
+      "title": "Rose Drinks One Cup of Coffee for 4 hours",
+      "author": "Rose",
+      "genreId": 5,
+      "krogerId": 2,
+      "userId": 3,
+      "review": "",
+      "id": 17
+    },
+    {
+      "title": "Is my review working?",
+      "author": "rose",
+      "genreId": 7,
+      "krogerId": 3,
+      "userId": 1,
+      "review": "",
+      "id": 18
     }
   ],
   "krogers": [
