@@ -7,7 +7,6 @@ export default class BookList extends Component {
     }
     // In this component we are rendering the JSX to create our list of books. 
     render() {
-        console.log("current user", this.state.currentUser)
         return (
             <section className="booklist"> {
                 // We are mapping through the array of books in our database and plopping them into a new array. For each book, we are building the JSX to list the title, author, genre, and location. 
