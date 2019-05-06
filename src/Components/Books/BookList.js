@@ -22,6 +22,7 @@ export default class BookList extends Component {
                                 address: {book.kroger.address}
                             </p>
                             {
+                                // We are using a ternary operator to check if the userId matches the currentUser, which is set in our state. If they do match, our page will only let the user edit and delete books that the logged in user has added to their book list. 
                                 (parseInt(book.userId) === parseInt(this.state.currentUser)) ?
                                     (<div key={book.id}>
                                         <button type="button" className="edit-book" onClick={() => this.props.history.push(`/booklist/${book.id}/edit`)}>edit book</button>
@@ -41,6 +42,7 @@ export default class BookList extends Component {
                                 review: {book.review}
                             </p>
                             {
+                                // We're doing the exact same thing here! It's happening twice because some of our books have reviews and some don't.
                                 (parseInt(book.userId) === parseInt(this.state.currentUser)) ?
                                     (<div key={book.id}>
                                         <button type="button" className="edit-book" onClick={() => this.props.history.push(`/booklist/${book.id}/edit`)}>edit book</button>

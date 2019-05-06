@@ -16,14 +16,14 @@ export default class ReviewList extends Component {
 
                     // We are mapping through the array of books in our database and plopping them into a new array. For each book, we are building the JSX to list the title, author, genre, and location. 
                     this.props.books.map(book => {
-                        // If the book has an empty string as the value of the key review, we will not list the review.
+                        // If the book has an empty string as the value of the key review AND matches the userId of the logged in user, we will list that title as a link to the form to add a review.
                         if (book.review === "" && parseInt(book.userId) === parseInt(this.state.currentUser))
                             return <div key={book.id}>
                                 <p>
                                     <Link className="nav-link" to={`/review/${book.id}/addreview`}>{book.title}</Link>  <br />
                                 </p>
                             </div>
-                        // Buuuuuut if it DOES have something other than an empty string, this tells it to add that review line on.
+                        // Buuuuuut if it DOES have something other than an empty string, this tells it to NOT show up in our review list.
                         else {
                             return null
                         }
