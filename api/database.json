@@ -19,18 +19,29 @@
       "username": "Billy",
       "email": "crimeZZZ@hotmail.com",
       "id": 4
+    },
+    {
+      "username": "kristen",
+      "email": "k@k.com",
+      "id": 5
+    },
+    {
+      "username": "Jameka",
+      "email": "jameka@jameka.com",
+      "id": 6
+    },
+    {
+      "username": "RYAN",
+      "email": "BOOKZSUCK@HOTMAIL.COM",
+      "id": 7
+    },
+    {
+      "username": "LINDA",
+      "email": "BESTLINDAEVER@HOTMAIL.COM",
+      "id": 8
     }
   ],
   "books": [
-    {
-      "id": 1,
-      "title": "Mother's Worst Nightmare",
-      "author": "Hilda Hilderson the SIXTHHH",
-      "genreId": 1,
-      "krogerId": 2,
-      "userId": 1,
-      "review": "Great character development, but major plot hole. No one is a mother in this book!"
-    },
     {
       "id": 3,
       "title": "Two by Two",
@@ -51,48 +62,48 @@
     },
     {
       "id": 10,
-      "title": "Jameka Is Truly Amazing",
+      "title": "Jameka Is TRULY Amazing",
       "author": "Rose",
       "genreId": 2,
-      "krogerId": 6,
+      "krogerId": 1,
       "userId": 1,
       "review": "From the first sentence of this book, I was struck with the importance of this novel. From cover to cover, I wholeheartedly agree that Jameka is truly amazing."
     },
     {
+      "id": 11,
       "title": "Meag and Rose's Big Adventure",
       "author": "Meag Mueller",
       "genreId": 6,
       "krogerId": 2,
       "userId": 1,
-      "review": "",
-      "id": 11
+      "review": ""
     },
     {
-      "title": "Rose Drinks One Cup of Coffee for 4 hours",
-      "author": "Hilda Hilderson",
-      "genreId": 5,
-      "krogerId": 2,
-      "userId": 1,
-      "review": "",
-      "id": 12
-    },
-    {
-      "title": "CRIME LORDZ",
-      "author": "Michael Crighton ",
-      "genreId": 3,
-      "krogerId": 1,
+      "id": 14,
+      "title": "CRIME LORDZ 2",
+      "author": "Michael Crichton ",
+      "genreId": 2,
+      "krogerId": 3,
       "userId": 4,
-      "review": "",
-      "id": 14
+      "review": "Feudal lords fight crime: the reckoning"
     },
     {
+      "id": 15,
       "title": "Ghost Spa",
-      "author": "Glent Cucumber",
+      "author": "Varnald Van Fig",
       "genreId": 2,
       "krogerId": 7,
       "userId": 3,
-      "review": "Spooky!",
-      "id": 15
+      "review": "still spooky"
+    },
+    {
+      "id": 16,
+      "title": "Cast Iron Balloons",
+      "author": "Insane Clown Posse",
+      "genreId": 3,
+      "krogerId": 1,
+      "userId": 8,
+      "review": "TOO SOFT"
     }
   ],
   "krogers": [
