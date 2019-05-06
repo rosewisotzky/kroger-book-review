@@ -45,7 +45,6 @@ export default class EditBookForm extends Component {
         })
     }
     render() {
-        // console.log(this.props.books)
         return (
             <React.Fragment>
                 <h1>edit book</h1>

@@ -9,7 +9,6 @@ export default class ReviewList extends Component {
     }
     
     render() {
-        // console.log("books", this.props.books)
         return (
             <section className="review">
                 <h1> to be reviewed </h1>

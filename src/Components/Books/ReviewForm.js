@@ -43,7 +43,6 @@ export default class ReviewBookForm extends Component {
             .then(book => {
                 KrogerManager.get(parseInt(book.krogerId))
                     .then((krogerInfo) => {
-                        console.log(krogerInfo)
                         GenreManager.get(parseInt(book.genreId)).then((genreInfo) => {
                             this.setState({
                                 title: book.title,
@@ -63,7 +62,6 @@ export default class ReviewBookForm extends Component {
             )
     }
     render() {
-        // console.log(this.props.books)
         return (
             <React.Fragment>
                 <h1>review book</h1>
