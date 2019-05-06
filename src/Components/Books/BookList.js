@@ -23,7 +23,7 @@ export default class BookList extends Component {
                             </p>
                             {
                                 (parseInt(book.userId) === parseInt(this.state.currentUser)) ?
-                                    (<div>
+                                    (<div key={book.id}>
                                         <button type="button" className="edit-book" onClick={() => this.props.history.push(`/booklist/${book.id}/edit`)}>edit book</button>
                                         <button type="button" className="delete-book" onClick={() => this.props.deleteBook(book.id)}>delete</button> </div>) :
                                     (null)
@@ -42,7 +42,8 @@ export default class BookList extends Component {
                             </p>
                             {
                                 (parseInt(book.userId) === parseInt(this.state.currentUser)) ?
-                                    (<div><button type="button" className="edit-book" onClick={() => this.props.history.push(`/booklist/${book.id}/edit`)}>edit book</button>
+                                    (<div key={book.id}>
+                                        <button type="button" className="edit-book" onClick={() => this.props.history.push(`/booklist/${book.id}/edit`)}>edit book</button>
                                         <button type="button" className="delete-book" onClick={() => this.props.deleteBook(book.id)}>delete</button>
                                     </div>) :
                                     (null)

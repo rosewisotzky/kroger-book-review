@@ -62,7 +62,7 @@ export default class Login extends Component {
                     {/* This button is a submit! On line 42 you can see that we're calling our handleLogin method onSubmit. Which is the same as clickcing this button. Because it's type is submit. */}
                     <button type="submit">sign in</button>
                     {/* This button here takes us to our registration form. Come on over to registration.js to learn more! */}
-                    <button type="register" onClick={() =>{this.props.history.push("./registration")}}>register new account</button>
+                    <button type="button" onClick={() =>{this.props.history.push("./registration")}}>register new account</button>
                 </form>
             </React.Fragment>
 
