@@ -1,0 +1,8 @@
+.header-container {
+    font-family: 'Cormorant Garamond', serif;
+    flex: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    color: #DF0101;
+}
