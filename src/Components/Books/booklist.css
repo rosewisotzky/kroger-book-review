@@ -1,0 +1,26 @@
+body {
+    background-color: #fffefc;
+}
+.booklist {
+    display: flexbox;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 350px;
+    height: 300px;
+    overflow-y: scroll;
+    scrollbar-color: rgb(248, 244, 244) green;
+    scrollbar-width: thin;
+    font-family: 'Cormorant Garamond', serif;
+    margin: auto;
+    border-right: double;
+    border-left: double;
+    border-radius: 8px;
+    padding: 0px 20px 0px 20px;
+}
+
+.book-list-item {
+    display:flexbox;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}

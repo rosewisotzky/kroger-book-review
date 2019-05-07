@@ -1,5 +1,6 @@
 
 import React, { Component } from 'react';
+import './booklist.css'
 
 export default class BookList extends Component {
     state = {
@@ -8,12 +9,12 @@ export default class BookList extends Component {
     // In this component we are rendering the JSX to create our list of books. 
     render() {
         return (
-            <section className="booklist"> {
+            <div className="booklist"> {
                 // We are mapping through the array of books in our database and plopping them into a new array. For each book, we are building the JSX to list the title, author, genre, and location. 
                 this.props.books.map(book => {
                     // If the book has an empty string as the value of the key review, we will not list the review.
                     if (book.review === "") {
-                        return <div key={book.id}>
+                        return <div key={book.id} className="book-list-item">
                             <p>
                                 title: {book.title} <br />
                                 author: {book.author} <br />
@@ -32,7 +33,7 @@ export default class BookList extends Component {
                         </div>
                         // Buuuuuut if it DOES have something other than an empty string, this tells it to add that review line on.
                     } else {
-                        return <div key={book.id}>
+                        return <div key={book.id} className="book-list-item">
                             <p>
                                 title: {book.title} <br />
                                 author: {book.author} <br />
@@ -55,7 +56,7 @@ export default class BookList extends Component {
                 }
                 )
             }
-            </section>
+            </div>
         )
     }
 }
