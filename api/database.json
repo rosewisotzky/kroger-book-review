@@ -141,6 +141,15 @@
       "userId": 3,
       "review": "",
       "id": 20
+    },
+    {
+      "title": "test1",
+      "author": "Rose",
+      "genreId": 2,
+      "krogerId": 6,
+      "userId": 1,
+      "review": "",
+      "id": 21
     }
   ],
   "krogers": [
