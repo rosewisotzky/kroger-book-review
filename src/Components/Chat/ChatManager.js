@@ -6,5 +6,14 @@ export default {
     },
     get(id) {
         return fetch(`${remoteURL}/chat/${id}`).then(chat => chat.json())
+    },
+    post(newMessage) {
+        return fetch(`${remoteURL}/chat`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(newMessage)
+        }).then(message => message.json())
     }
 }

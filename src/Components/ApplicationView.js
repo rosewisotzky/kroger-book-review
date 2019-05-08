@@ -81,6 +81,12 @@ registerNewUser  = (newUser) => {
   .then(users => this.setState({"users": users}))
 }
 
+addNewMessage = (newMessage) => {
+  return ChatManager.post(newMessage)
+  .then(() => ChatManager.getAll())
+  .then(chat => this.setState({"chat": chat}))
+}
+
   
 
   render() {
@@ -112,7 +118,7 @@ registerNewUser  = (newUser) => {
           return <ReviewForm {...props} books={this.state.books} genres={this.state.genres} krogers={this.state.krogers} patchBook={this.patchBook} />
         }} />
         <Route exact path="/chat" render={props => {
-          return <Messages {...props} chat={this.state.chat} />
+          return <Messages {...props} chat={this.state.chat} addNewMessage={this.addNewMessage}/>
         }} />
       </React.Fragment>
     )
