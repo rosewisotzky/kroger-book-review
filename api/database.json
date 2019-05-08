@@ -141,6 +141,15 @@
       "userId": 3,
       "review": "",
       "id": 20
+    },
+    {
+      "title": "test1",
+      "author": "Rose",
+      "genreId": 2,
+      "krogerId": 6,
+      "userId": 1,
+      "review": "",
+      "id": 21
     }
   ],
   "krogers": [
@@ -208,6 +217,53 @@
     {
       "id": 7,
       "genre": "Mystery"
+    }
+  ],
+  "chat": [
+    {
+      "id": 1,
+      "message": "i'm going to be putting up reviews at the eastland kroger, who wants to come?",
+      "userId": 7
+    },
+    {
+      "id": 2,
+      "message": "dude you haven't even read mother's worst nightmare how can you review it",
+      "userId": 2
+    },
+    {
+      "message": "whatever it's a nightmare",
+      "userId": "1",
+      "id": 3
+    },
+    {
+      "message": "test",
+      "userId": "3",
+      "id": 4
+    },
+    {
+      "message": "test b",
+      "userId": "3",
+      "id": 5
+    },
+    {
+      "message": "whatever it's a nightmare",
+      "userId": "3",
+      "id": 6
+    },
+    {
+      "message": "whatever it's a nightmare",
+      "userId": "3",
+      "id": 7
+    },
+    {
+      "message": "test",
+      "userId": "3",
+      "id": 8
+    },
+    {
+      "message": "test",
+      "userId": "3",
+      "id": 9
     }
   ]
 }

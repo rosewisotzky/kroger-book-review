@@ -13,7 +13,11 @@ export default class NavBar extends Component {
                 </div>
                 <div className="nav-container">
                     <Nav className="nav-bar">
-                        <NavLink href="/booklist">my list</NavLink> <NavLink href="/addbook">add book</NavLink> <NavLink href="/review"> review </NavLink> <NavLink href="/" onClick={() => sessionStorage.clear()}>logout</NavLink>
+                        <NavLink href="/booklist" className="inactive" activeclassname="active">kroger book list</NavLink>
+                        <NavLink href="/addbook" className="inactive" activeclassname="active">add book</NavLink>
+                        <NavLink href="/review" className="inactive" activeclassname="active"> review </NavLink>
+                        <NavLink href="/chat" className="inactive" activeclassname="active"> chat </NavLink>
+                        <NavLink href="/" onClick={() => sessionStorage.clear()} className="inactive" activeclassname="active">logout</NavLink>
                     </Nav>
                 </div>
             </React.Fragment>

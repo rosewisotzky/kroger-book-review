@@ -12,7 +12,8 @@ import ReviewForm from './Books/ReviewForm'
 import Login from './Login/login'
 import LoginManager from './Login/LoginManager'
 import RegistrationForm from './Registration/registration'
-
+import Messages from './Chat/Messages'
+import ChatManager from './Chat/ChatManager'
 export default class ApplicationView extends Component {
 
   isAuthenticated = () => sessionStorage.getItem("userID") !== null
@@ -22,6 +23,7 @@ export default class ApplicationView extends Component {
     "books": [],
     "krogers": [],
     "genres": [],
+    "chat": [],
     "userId": ""
   }
 // componentDidMount runs after the render and calls our getAll fetch calls and sets the new state.
@@ -36,6 +38,8 @@ export default class ApplicationView extends Component {
     KrogerManager.getAll()
       .then(kroger => newState.krogers = kroger)
       .then(() => this.setState(newState))
+    ChatManager.getAll()
+    .then(chat=> newState.chat = chat)
     LoginManager.getAll()
     .then(user => newState.user = user)
     .then(() => this.setState(newState))
@@ -76,6 +80,13 @@ registerNewUser  = (newUser) => {
   .then(() => LoginManager.getAll())
   .then(users => this.setState({"users": users}))
 }
+
+addNewMessage = (newMessage) => {
+  return ChatManager.post(newMessage)
+  .then(() => ChatManager.getAll())
+  .then(chat => this.setState({"chat": chat}))
+}
+
   
 
   render() {
@@ -105,6 +116,9 @@ registerNewUser  = (newUser) => {
         }} />
         <Route path="/review/:bookId(\d+)/addreview" render={props => {
           return <ReviewForm {...props} books={this.state.books} genres={this.state.genres} krogers={this.state.krogers} patchBook={this.patchBook} />
+        }} />
+        <Route exact path="/chat" render={props => {
+          return <Messages {...props} chat={this.state.chat} addNewMessage={this.addNewMessage}/>
         }} />
       </React.Fragment>
     )
