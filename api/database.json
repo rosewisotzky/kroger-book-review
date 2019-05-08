@@ -218,5 +218,18 @@
       "id": 7,
       "genre": "Mystery"
     }
+  ],
+  
+    "chat": [ 
+      {
+        "id": 1,
+        "message": "i'm going to be putting up reviews at the eastland kroger, who wants to come?",
+        "userId": 7
+    },
+    {
+      "id": 2,
+      "message": "dude you haven't even read mother's worst nightmare how can you review it",
+      "userId": 2
+    }
   ]
 }
