@@ -86,7 +86,7 @@ export default class EditBookForm extends Component {
                             {
                                 // Inside of our drop down, we are mapping through our genres so the genres in our database are displayed as options. Nice. 
                                 this.props.genres.map(genre =>
-                                    <option id={genre.id} value={genre.id}>{genre.genre}</option>
+                                    <option id={genre.id} value={genre.id} key={genre.id}>{genre.genre}</option>
                                 )
                             }
                         </select> <br />
@@ -100,7 +100,7 @@ export default class EditBookForm extends Component {
                             {
                                 // Over here we're doing the same thing, but since we want both neighborhood and address we're just accessing both in our option. 
                                 this.props.krogers.map(kroger =>
-                                    <option id={kroger.id} value={kroger.id}>{kroger.neighborhood} {kroger.address}</option>
+                                    <option id={kroger.id} value={kroger.id} key={kroger.id}>{kroger.neighborhood} {kroger.address}</option>
                                 )}
                         </select>
                         <button type="submit">edit book</button>

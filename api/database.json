@@ -62,7 +62,7 @@
     },
     {
       "id": 10,
-      "title": "Jameka Is TRULY Amazing",
+      "title": "Jameka Is TRULY Amazing!!!",
       "author": "Rose",
       "genreId": 2,
       "krogerId": 1,
@@ -76,7 +76,7 @@
       "genreId": 6,
       "krogerId": 2,
       "userId": 1,
-      "review": ""
+      "review": "GREAT"
     },
     {
       "id": 14,
@@ -113,15 +113,6 @@
       "userId": 3,
       "review": "",
       "id": 17
-    },
-    {
-      "title": "Is my review working?",
-      "author": "rose",
-      "genreId": 7,
-      "krogerId": 3,
-      "userId": 1,
-      "review": "",
-      "id": 18
     }
   ],
   "krogers": [
