@@ -1,5 +1,6 @@
 // This component builds the form to add a new book and also contains the functionality to add it to the DOM.
 import React, { Component } from 'react';
+import './bookform.css'
 
 export default class AddBookForm extends Component {
     state = {
@@ -37,7 +38,7 @@ export default class AddBookForm extends Component {
             <React.Fragment>
                 <h1>add new book</h1>
                 {/* This tells us that when we click the button with the type of submit that our method constructNewBook will be called. */}
-                <form onSubmit={this.constructNewBook} className="addform">
+                <form onSubmit={this.constructNewBook} className="addform" id="addForm">
                     <div className="form-div" key="add-form">
                         <label htmlFor="title">Title:</label>
                         <input
@@ -48,7 +49,7 @@ export default class AddBookForm extends Component {
                             onChange={this.handleFieldChange}
                             id="title"
                             placeholder="title"></input> <br />
-                        <label htmlFor="author">Author:</label>
+                        <label htmlFor="author">Author:  </label>
                         <input
                             type="text"
                             required
@@ -56,14 +57,14 @@ export default class AddBookForm extends Component {
                             onChange={this.handleFieldChange}
                             id="author"
                             placeholder="author"></input> <br />
-                        <label htmlFor="review">Review(optional):</label>
+                        <label htmlFor="review">Review(optional):  </label>
                         <textarea
                             type="textarea"
                             className="reviewInput"
                             onChange={this.handleFieldChange}
                             id="review"
                             placeholder="review"></textarea> <br />
-                        <label htmlFor="genre">Genre:</label>
+                        <label htmlFor="genre">Genre:  </label>
                         <select name="genres"
                             onChange={this.handleFieldChange}
                             id="genreId"
@@ -76,7 +77,7 @@ export default class AddBookForm extends Component {
                                 )
                             }
                         </select> <br />
-                        <label htmlFor="kroger">Kroger:</label>
+                        <label htmlFor="kroger">Kroger:  </label>
                         <select name="krogers"
                             onChange={this.handleFieldChange}
                             id="krogerId"

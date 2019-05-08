@@ -1,0 +1,17 @@
+.chat-container {
+    overflow-y: scroll;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 250px;
+    width: 50vw;
+}
+
+.title {
+    display: flex;
+    align-content: center;
+}
+
+.new-chat{
+    display: flex;
+}
