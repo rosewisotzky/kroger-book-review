@@ -1,0 +1,14 @@
+.review-list {
+    /* display: flexbox;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 33vw;
+    height: 300px;
+    overflow-y: scroll;
+    scrollbar-color: rgb(248, 244, 244) green;
+    scrollbar-width: thin; */
+    font-family: 'Cormorant Garamond', serif;
+    margin: auto;
+    padding: 0px 30px 0px 50px;
+}

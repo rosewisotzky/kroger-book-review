@@ -1,0 +1,7 @@
+#loginForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Cormorant Garamond', serif; 
+}

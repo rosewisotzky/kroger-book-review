@@ -5,13 +5,20 @@
     justify-content: center;
     height: 250px;
     width: 50vw;
+    font-family: 'Cormorant Garamond', serif;
+    border: 5pt double grey;
+    padding: 20px;
+    margin: auto;
 }
 
 .title {
     display: flex;
     align-content: center;
+    margin-top: 20px;
 }
 
-.new-chat{
+.new-chat { 
     display: flex;
-}
+    align-items: flex-end;
+    justify-content: flex-end;
+}  

@@ -22,15 +22,15 @@
     justify-content: space-around;
     width: 50%;
     font-size: 24px;
-    font-variant: small-caps;
-    font-weight: 400;
+    /* font-variant: small-caps; */
+    font-weight: 700;
     margin-right: auto;
     margin-left: auto;
     margin-top: auto;
     margin-bottom: 72pt;
     padding: 10px;
     font-family: 'Lato', serif;
-    /* font-variant: small-caps; */
+    font-variant: small-caps;
     /* font-weight: 300; */
 }
 

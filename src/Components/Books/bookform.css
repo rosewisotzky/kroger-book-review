@@ -14,8 +14,9 @@
     justify-content: space-center;
     font-family: 'Cormorant Garamond', serif;
     border: 5pt double grey;
-    height: 300px;
+    height: 200px;
     width: 400px;
+    padding: 20px;
     margin: auto;
 }
 
