@@ -118,7 +118,8 @@ addNewMessage = (newMessage) => {
           return <ReviewForm {...props} books={this.state.books} genres={this.state.genres} krogers={this.state.krogers} patchBook={this.patchBook} />
         }} />
         <Route exact path="/chat" render={props => {
-          return <Messages {...props} chat={this.state.chat} addNewMessage={this.addNewMessage}/>
+          if (this.isAuthenticated()) {
+          return <Messages {...props} chat={this.state.chat} addNewMessage={this.addNewMessage} /> } else { return <Redirect to="/" /> }
         }} />
       </React.Fragment>
     )

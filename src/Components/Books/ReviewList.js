@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from "react-router-dom"
+import './review.css'
 
 export default class ReviewList extends Component {
 
@@ -18,7 +19,7 @@ export default class ReviewList extends Component {
                     this.props.books.map(book => {
                         // If the book has an empty string as the value of the key review AND matches the userId of the logged in user, we will list that title as a link to the form to add a review.
                         if (book.review === "" && parseInt(book.userId) === parseInt(this.state.currentUser))
-                            return <div key={book.id}>
+                            return <div key={book.id} className="review-list">
                                 <p>
                                     <Link className="nav-link" to={`/review/${book.id}/addreview`}>{book.title}</Link>  <br />
                                 </p>

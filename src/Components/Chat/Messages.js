@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './chat.css'
 
 export default class Messages extends Component {
     state = {
@@ -23,8 +24,8 @@ export default class Messages extends Component {
     render() {
         return (
             <React.Fragment>
+                <h1>kroger chat room</h1>
                 <section className="chat-container">
-                    <h1>kroger chat room</h1>
                     <section className="message-list"> {
                         this.props.chat.map(messages =>
                             <div key={messages.id}>
@@ -34,7 +35,7 @@ export default class Messages extends Component {
                     }
                     </section>
                     <section className="new-chat">
-                    <form onSubmit={this.handleAddMessage}>
+                    <form onSubmit={this.handleAddMessage} className="new-chat">
                         <input
                         type="text"
                         id="message"

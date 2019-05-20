@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import LoginManager from '../Login/LoginManager'
+import './registration.css'
 
 export default class Registration extends Component {
     state = {
@@ -56,7 +57,7 @@ export default class Registration extends Component {
         return (
             <React.Fragment>
                 <h1>create new account</h1>
-                <form onSubmit={this.handleRegistration}>
+                <form onSubmit={this.handleRegistration} id="registerForm">
                     <label htmlFor="inputUsername">username: </label>
                     <input
                         onChange={this.handleFieldChange}

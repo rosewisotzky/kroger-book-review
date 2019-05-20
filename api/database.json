@@ -7,7 +7,7 @@
     },
     {
       "id": 2,
-      "username": "JOE",
+      "username": "E.L. James",
       "email": "J@J.COM"
     },
     {
@@ -31,7 +31,7 @@
       "id": 6
     },
     {
-      "username": "RYAN",
+      "username": "NickSparx",
       "email": "BOOKZSUCK@HOTMAIL.COM",
       "id": 7
     },
@@ -94,17 +94,8 @@
       "author": "Michael Crichton ",
       "genreId": 2,
       "krogerId": 3,
-      "userId": 4,
-      "review": "Feudal lords fight crime: the reckoning"
-    },
-    {
-      "id": 15,
-      "title": "Ghost Spa",
-      "author": "Varnald Van Fig",
-      "genreId": 2,
-      "krogerId": 7,
       "userId": 3,
-      "review": "still spooky"
+      "review": "Feudal lords fight crime: the reckoning"
     },
     {
       "id": 16,
@@ -112,44 +103,26 @@
       "author": "Insane Clown Posse",
       "genreId": 3,
       "krogerId": 1,
-      "userId": 8,
+      "userId": 3,
       "review": "TOO SOFT"
     },
     {
+      "id": 17,
       "title": "Rose Drinks One Cup of Coffee for 4 hours",
       "author": "Rose",
       "genreId": 5,
       "krogerId": 2,
       "userId": 3,
-      "review": "",
-      "id": 17
+      "review": "WOW!"
     },
     {
-      "title": "test",
-      "author": "test",
-      "genreId": 2,
-      "krogerId": 1,
-      "userId": 9,
-      "review": "",
-      "id": 19
-    },
-    {
-      "title": "Justina Is A Great Friend",
-      "author": "Rose",
+      "title": "Werewolf Teens on Bikes",
+      "author": "Sharon Sala",
       "genreId": 3,
-      "krogerId": 5,
+      "krogerId": 1,
       "userId": 3,
       "review": "",
-      "id": 20
-    },
-    {
-      "title": "test1",
-      "author": "Rose",
-      "genreId": 2,
-      "krogerId": 6,
-      "userId": 1,
-      "review": "",
-      "id": 21
+      "id": 18
     }
   ],
   "krogers": [
@@ -236,34 +209,9 @@
       "id": 3
     },
     {
-      "message": "test",
+      "message": "Spoooooky!",
       "userId": "3",
       "id": 4
-    },
-    {
-      "message": "test b",
-      "userId": "3",
-      "id": 5
-    },
-    {
-      "message": "whatever it's a nightmare",
-      "userId": "3",
-      "id": 6
-    },
-    {
-      "message": "whatever it's a nightmare",
-      "userId": "3",
-      "id": 7
-    },
-    {
-      "message": "test",
-      "userId": "3",
-      "id": 8
-    },
-    {
-      "message": "test",
-      "userId": "3",
-      "id": 9
     }
   ]
 }

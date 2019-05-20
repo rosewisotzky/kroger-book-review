@@ -1,0 +1,33 @@
+.book-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+#addForm{
+    /* position: relative; */
+}
+.addform {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-center;
+    font-family: 'Cormorant Garamond', serif;
+    border: 5pt double grey;
+    height: 200px;
+    width: 400px;
+    padding: 20px;
+    margin: auto;
+}
+
+h1 {
+    display: flex;
+    /* position: relative; */
+    font-family: 'Lato', sans-serif;
+    font-variant: small-caps;
+    font-size: 24pt;
+    color:  #af1b0a;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
