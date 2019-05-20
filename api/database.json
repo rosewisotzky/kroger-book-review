@@ -107,15 +107,6 @@
       "review": "TOO SOFT"
     },
     {
-      "id": 17,
-      "title": "Rose Drinks One Cup of Coffee for 4 hours",
-      "author": "Rose",
-      "genreId": 5,
-      "krogerId": 2,
-      "userId": 3,
-      "review": "WOW!"
-    },
-    {
       "title": "Werewolf Teens on Bikes",
       "author": "Sharon Sala",
       "genreId": 3,
@@ -212,6 +203,21 @@
       "message": "Spoooooky!",
       "userId": "3",
       "id": 4
+    },
+    {
+      "message": "sup gurl",
+      "userId": "3",
+      "id": 5
+    },
+    {
+      "message": "beep boop boop",
+      "userId": "3",
+      "id": 6
+    },
+    {
+      "message": "wowee",
+      "userId": "3",
+      "id": 7
     }
   ]
 }
