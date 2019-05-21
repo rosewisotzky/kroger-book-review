@@ -71,49 +71,40 @@
       "review": ""
     },
     {
-      "id": 10,
-      "title": "Jameka Is TRULY Amazing",
-      "author": "Rose",
-      "genreId": 2,
-      "krogerId": 1,
-      "userId": 1,
-      "review": "From the first sentence of this book, I was struck with the importance of this novel. From cover to cover, I wholeheartedly agree that Jameka is truly amazing."
-    },
-    {
-      "id": 11,
-      "title": "Meag and Rose's Big Adventure",
-      "author": "Meag Mueller",
-      "genreId": 6,
-      "krogerId": 2,
-      "userId": 1,
-      "review": ""
-    },
-    {
-      "id": 14,
-      "title": "CRIME LORDZ 2",
-      "author": "Michael Crichton ",
-      "genreId": 2,
-      "krogerId": 3,
-      "userId": 3,
-      "review": "Feudal lords fight crime: the reckoning"
-    },
-    {
-      "id": 16,
-      "title": "Cast Iron Balloons",
-      "author": "Insane Clown Posse",
-      "genreId": 3,
-      "krogerId": 1,
-      "userId": 3,
-      "review": "TOO SOFT"
-    },
-    {
+      "id": 18,
       "title": "Werewolf Teens on Bikes",
       "author": "Sharon Sala",
       "genreId": 3,
       "krogerId": 1,
       "userId": 3,
+      "review": ""
+    },
+    {
+      "id": 21,
+      "title": "The 18th Abduction",
+      "author": "James Patterson",
+      "genreId": 1,
+      "krogerId": 6,
+      "userId": 3,
+      "review": ""
+    },
+    {
+      "id": 21,
+      "title": "Rose Drinks One Cup of Coffee for 4 hours",
+      "author": "Michael Crighton ",
+      "genreId": 1,
+      "krogerId": 6,
+      "userId": 3,
+      "review": "SHOCKING! AND A PAGE TURNER! WOULD RECOMMEND TO A FRIEND!"
+    },
+    {
+      "title": "The Mister",
+      "author": "E.L. James",
+      "genreId": 4,
+      "krogerId": 3,
+      "userId": 3,
       "review": "",
-      "id": 18
+      "id": 22
     }
   ],
   "krogers": [
@@ -195,12 +186,12 @@
       "userId": 2
     },
     {
-      "message": "whatever it's a nightmare",
-      "userId": "1",
+      "message": "GREAT IDEA",
+      "userId": "3",
       "id": 3
     },
     {
-      "message": "Spoooooky!",
+      "message": "GREAT IDEA",
       "userId": "3",
       "id": 4
     },
@@ -210,12 +201,12 @@
       "id": 5
     },
     {
-      "message": "beep boop boop",
+      "message": "Green Hills is on to me! It's off the map!",
       "userId": "3",
       "id": 6
     },
     {
-      "message": "wowee",
+      "message": "ARE YOU SURE YOU WANT TO COMMIT FRAUD?",
       "userId": "3",
       "id": 7
     }
