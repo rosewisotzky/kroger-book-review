@@ -71,58 +71,40 @@
       "review": ""
     },
     {
-      "id": 10,
-      "title": "Jameka Is TRULY Amazing",
-      "author": "Rose",
-      "genreId": 2,
+      "id": 18,
+      "title": "Werewolf Teens on Bikes: The Reckoning",
+      "author": "Sharon Salad",
+      "genreId": 3,
       "krogerId": 1,
-      "userId": 1,
-      "review": "From the first sentence of this book, I was struck with the importance of this novel. From cover to cover, I wholeheartedly agree that Jameka is truly amazing."
-    },
-    {
-      "id": 11,
-      "title": "Meag and Rose's Big Adventure",
-      "author": "Meag Mueller",
-      "genreId": 6,
-      "krogerId": 2,
-      "userId": 1,
+      "userId": 3,
       "review": ""
     },
     {
-      "id": 14,
-      "title": "CRIME LORDZ 2",
-      "author": "Michael Crichton ",
-      "genreId": 2,
+      "id": 23,
+      "title": "The 18th Abduction",
+      "author": "James Patterson",
+      "genreId": 5,
+      "krogerId": 1,
+      "userId": 3,
+      "review": "WOOOOOOW"
+    },
+    {
+      "title": "Shelter In",
+      "author": "Nora Roberts",
+      "genreId": 7,
       "krogerId": 3,
       "userId": 3,
-      "review": "Feudal lords fight crime: the reckoning"
-    },
-    {
-      "id": 16,
-      "title": "Cast Iron Balloons",
-      "author": "Insane Clown Posse",
-      "genreId": 3,
-      "krogerId": 1,
-      "userId": 3,
-      "review": "TOO SOFT"
-    },
-    {
-      "id": 17,
-      "title": "Rose Drinks One Cup of Coffee for 4 hours",
-      "author": "Rose",
-      "genreId": 5,
-      "krogerId": 2,
-      "userId": 3,
-      "review": "WOW!"
-    },
-    {
-      "title": "Werewolf Teens on Bikes",
-      "author": "Sharon Sala",
-      "genreId": 3,
-      "krogerId": 1,
-      "userId": 3,
       "review": "",
-      "id": 18
+      "id": 24
+    },
+    {
+      "id": 25,
+      "title": "Texas Skies",
+      "author": "Debbie Macomber",
+      "genreId": 2,
+      "krogerId": 5,
+      "userId": 3,
+      "review": "Steamy!"
     }
   ],
   "krogers": [
@@ -204,14 +186,19 @@
       "userId": 2
     },
     {
-      "message": "whatever it's a nightmare",
-      "userId": "1",
+      "message": "GREAT IDEA",
+      "userId": "3",
       "id": 3
     },
     {
-      "message": "Spoooooky!",
+      "message": "I'm too young to commit fraud!",
       "userId": "3",
       "id": 4
+    },
+    {
+      "message": "SUP NERDZ!",
+      "userId": "3",
+      "id": 5
     }
   ]
 }
