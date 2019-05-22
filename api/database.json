@@ -72,39 +72,39 @@
     },
     {
       "id": 18,
-      "title": "Werewolf Teens on Bikes",
-      "author": "Sharon Sala",
+      "title": "Werewolf Teens on Bikes: The Reckoning",
+      "author": "Sharon Salad",
       "genreId": 3,
       "krogerId": 1,
       "userId": 3,
       "review": ""
     },
     {
-      "id": 21,
+      "id": 23,
       "title": "The 18th Abduction",
       "author": "James Patterson",
-      "genreId": 1,
-      "krogerId": 6,
+      "genreId": 5,
+      "krogerId": 1,
       "userId": 3,
-      "review": ""
+      "review": "WOOOOOOW"
     },
     {
-      "id": 21,
-      "title": "Rose Drinks One Cup of Coffee for 4 hours",
-      "author": "Michael Crighton ",
-      "genreId": 1,
-      "krogerId": 6,
-      "userId": 3,
-      "review": "SHOCKING! AND A PAGE TURNER! WOULD RECOMMEND TO A FRIEND!"
-    },
-    {
-      "title": "The Mister",
-      "author": "E.L. James",
-      "genreId": 4,
+      "title": "Shelter In",
+      "author": "Nora Roberts",
+      "genreId": 7,
       "krogerId": 3,
       "userId": 3,
       "review": "",
-      "id": 22
+      "id": 24
+    },
+    {
+      "id": 25,
+      "title": "Texas Skies",
+      "author": "Debbie Macomber",
+      "genreId": 2,
+      "krogerId": 5,
+      "userId": 3,
+      "review": "Steamy!"
     }
   ],
   "krogers": [
@@ -191,24 +191,14 @@
       "id": 3
     },
     {
-      "message": "GREAT IDEA",
+      "message": "I'm too young to commit fraud!",
       "userId": "3",
       "id": 4
     },
     {
-      "message": "sup gurl",
+      "message": "SUP NERDZ!",
       "userId": "3",
       "id": 5
-    },
-    {
-      "message": "Green Hills is on to me! It's off the map!",
-      "userId": "3",
-      "id": 6
-    },
-    {
-      "message": "ARE YOU SURE YOU WANT TO COMMIT FRAUD?",
-      "userId": "3",
-      "id": 7
     }
   ]
 }
