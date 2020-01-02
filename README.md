@@ -1,68 +1,54 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Kroger Book Review
 
-## Available Scripts
+We can all agree that reading is a wonderful and enriching activity. But in a world with so many exciting new technologies, it’s very easy to go months without picking up a book. Have you ever said to yourself “Jeez, reading a book sounds like the perfect thing to do right now,” only to pick up a high quality novel and stare blankly at the pages? Let Kroger Book Review ease you back into the world of literature by guiding you through some of the finest and most trashy grocery store paperbacks.  The Kroger Book Review is an app designed to help the user select and review books at their local Kroger. They will be able to post the title of the book, the location of the Kroger it is stocked at and write their own review and have that information viewed by other users. If the user re-reads a book and decides they feel differently, they will be able to edit their posts so their friends can be up to date on their review.
 
-In the project directory, you can run:
+## Getting Started
 
-### `npm start`
+These instructions will get you a copy of the project up and running on your local machine.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### Installing
 
-### `npm test`
+Here's what you need to do to get started.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+First, let's clone down the repository. In your terminal, enter the following
 
-### `npm run build`
+```
+git clone git@github.com:rosewisotzky/kroger-book-review.git
+```
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Next, we'll need to go into the directory
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+```
+cd kroger-book-review/
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Since we're using dummy data, there's already some information set up for you in database.json. We'll need to go into our api folder and run the json server.
 
-### `npm run eject`
+```
+cd api/
+json-server -p 8088 -w database.json
+```
+In a different terminal window, make sure you are in the kroger-book-review directory. Let's run Kroger Book Review! Type the following command into your terminal.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+npm start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Your browser will automatically bring you to the application.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+##### You are now ready to use the Kroger Book Review!
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## First Time User instructions
+* The first thing you have to do is register as new user otherwise you will not be able to use Kroger Book Review!
+* Once registered, you are now able to use the application
 
-## Learn More
+## Built With
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* [react.js](https://reactjs.org/) - The framework used
+* [CSS](https://css-tricks.com/) - Main styling
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Authors
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+* **Rose Ku'uleialoha Wisotzky** 
