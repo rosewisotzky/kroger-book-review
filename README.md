@@ -29,9 +29,10 @@ Since we're using dummy data, there's already some information set up for you in
 cd api/
 json-server -p 8088 -w database.json
 ```
-In a different terminal window, make sure you are in the kroger-book-review directory. Let's run Kroger Book Review! Type the following command into your terminal.
+In a different terminal window, make sure you are in the kroger-book-review directory. Let's run Kroger Book Review! Type the following commands into your terminal.
 
 ```
+npm install
 npm start
 ```
 
